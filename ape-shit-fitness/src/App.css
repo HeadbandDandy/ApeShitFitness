@@ -1,6 +1,6 @@
 body {
     font-family: 'Josefin Sans';
-    background-color: #FFFAFB;
+    background-color: #9b9697;
   }
   
   * {
@@ -133,6 +133,12 @@ body {
     .exercise-video {
       width: 320px;
       height: 300px;
+    }
+
+    /* Below contains the styling added after the basic import sheet */
+
+    #ApeShit {
+
     }
   
   }
