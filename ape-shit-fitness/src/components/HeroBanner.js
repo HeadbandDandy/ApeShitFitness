@@ -31,7 +31,7 @@ const HeroBanner = () => {
         href='#exercises'>
         Check Out These Exercises!
         </Button>
-        <img src={HeroBannerImage} alt='banner'
+        <img src={HeroBannerImage} alt='banner' style={{width: '625px', height:'625px'}}
         className='hero-banner-img' />
     </Box>
   )
