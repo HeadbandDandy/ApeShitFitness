@@ -5,7 +5,7 @@
 //below contains the modules to import react and react-dom
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 // below contains the module for the Browser Router
 import { BrowserRouter } from 'react-router-dom';
