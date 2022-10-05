@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import { Box } from "@mui/material";
 
-//below contains the necessary components needed to display content
+
+import React, { useState } from 'react';
+import { Box } from '@mui/material';
 
 import Exercises from '../components/Exercises';
-import HeroBanner from '../components/HeroBanner';
 import SearchExercises from '../components/SearchExercises';
-
-
-
-
-
+import HeroBanner from '../components/HeroBanner';
 
 const Home = () => {
+
+  //below allows changes to be made across entire page
+  const [exercises, setExercises] = useState([]);
+  const [bodyPart, setBodyPart] = useState('all');
+
   return (
     <Box>
-        <HeroBanner/>
-        <SearchExercises />
-        <Exercises/>
+      <HeroBanner />
+      <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+      <Exercises setExercises={setExercises} exercises={exercises} bodyPart={bodyPart} />
     </Box>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
