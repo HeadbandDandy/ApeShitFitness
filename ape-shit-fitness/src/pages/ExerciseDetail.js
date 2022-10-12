@@ -19,7 +19,14 @@ const ExerciseDetail = () => {
 // below recalls function everytime the ID changes
 useEffect(() => {
   const fetchExercisesData = async () => {
-    const exerciseDBUrl = ''
+    const exerciseDBUrl = 'https://exercise.db.p.rapiapi.com';
+
+    const youTubeUrl = 'https://youtube-search-and-download.p.rapidpi.com';
+
+    const exerciseDetailData = await fetchData(`${exerciseDBUrl}/exercises/${id}`,
+    exerciseOptions);
+
+    setExerciseDetail(exerciseDetailData)
   }
 
   fetchExercisesData();
