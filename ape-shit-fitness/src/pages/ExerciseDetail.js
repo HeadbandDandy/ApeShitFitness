@@ -23,7 +23,7 @@ useEffect(() => {
 
     const youTubeUrl = 'https://youtube-search-and-download.p.rapidpi.com';
 
-    const exerciseDetailData = await fetchData(`${exerciseDBUrl}/exercises/${id}`,
+    const exerciseDetailData = await fetchData(`${exerciseDBUrl}/exercises/exercise/${id}`,
     exerciseOptions);
 
     setExerciseDetail(exerciseDetailData)
