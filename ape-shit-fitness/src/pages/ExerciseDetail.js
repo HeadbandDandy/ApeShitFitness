@@ -14,6 +14,7 @@ import SimilarExercises from '../components/SimilarExercises';
 
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
+  const [exerciseVideos, setExerciseVideos] = useState({});
   const { id } = useParams()
 
 // below recalls function everytime the ID changes
@@ -27,6 +28,11 @@ useEffect(() => {
     exerciseOptions);
 
     setExerciseDetail(exerciseDetailData)
+
+
+    //below is the api call for Youtube videos
+    const vidOptionsData = await fetchData(`${youTubeUrl}/search?q=${exerciseDetailData.name}`, exerciseOptions)
+    setExerciseVideos(vidOptionsData)
   }
 
   fetchExercisesData();
@@ -37,7 +43,7 @@ useEffect(() => {
   return (
     <Box>
       <Detail exerciseDetail={exerciseDetail} />
-      <ExerciseVideos />
+      <ExerciseVideos exerciseVideos={exerciseVideos}/>
       <SimilarExercises />
     </Box>
   )

@@ -12,6 +12,20 @@ const Detail = ( { exerciseDetail } ) => {
 
   const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
 
+  const extraDetail = [
+    {
+      icon: SectionImage,
+      name: bodyPart,
+    },
+    {
+      icon: TargetImage,
+      name: target,
+    },
+    {
+      icon: EquipmentImage,
+      name: equipment
+    }
+  ]
 
 
   return (
@@ -32,6 +46,21 @@ const Detail = ( { exerciseDetail } ) => {
 
 
         </Typography>
+        {extraDetail.map((item) => (
+          <Stack key={item.name} direction='row' gap='20px' alignItems='center'>
+            <Button sx= {{background: 'white', borderRadius: '50%', width: '50px', height: '50px'}}>
+
+              <img src={item.icon} alt={bodyPart} style={{width: '50px', height: '50px'}}/>
+
+            </Button>
+
+            <Typography textTransform='capitalize' variant="h6">
+              {item.name}
+            </Typography>
+
+
+          </Stack>
+        ))}
 
 
       </Stack>

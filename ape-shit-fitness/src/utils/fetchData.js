@@ -9,6 +9,14 @@ export const exerciseOptions = {
   }
 };
 
+export const vidOptions = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': '584c0f284bmsh4c28958b02b2107p1da852jsnfc072f57e955',
+    'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
+  }
+};
+
 
 
 // below contains response and data formatting from API's
