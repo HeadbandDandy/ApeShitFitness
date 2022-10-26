@@ -31,8 +31,8 @@ useEffect(() => {
 
 
     //below is the api call for Youtube videos
-    const vidOptionsData = await fetchData(`${youTubeUrl}/search?q=${exerciseDetailData.name}`, exerciseOptions)
-    setExerciseVideos(vidOptionsData)
+    const vidOptionsData = await fetchData(`${youTubeUrl}/search?query=${exerciseDetailData.name}`, exerciseOptions)
+    setExerciseVideos(vidOptionsData.contents)
   }
 
   fetchExercisesData();
