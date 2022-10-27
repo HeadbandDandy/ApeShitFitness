@@ -19,4 +19,4 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
   </Stack>
 );
 
-export default BodyPart; 
+export default BodyPart;

@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Box } from '@mui/material';
 
@@ -8,8 +6,6 @@ import SearchExercises from '../components/SearchExercises';
 import HeroBanner from '../components/HeroBanner';
 
 const Home = () => {
-
-  //below allows changes to be made across entire page
   const [exercises, setExercises] = useState([]);
   const [bodyPart, setBodyPart] = useState('all');
 

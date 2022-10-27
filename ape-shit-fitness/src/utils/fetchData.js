@@ -9,7 +9,7 @@ export const exerciseOptions = {
   }
 };
 
-export const vidOptions = {
+export const youtubeOptions = {
   method: 'GET',
   headers: {
     'X-RapidAPI-Key': '584c0f284bmsh4c28958b02b2107p1da852jsnfc072f57e955',
