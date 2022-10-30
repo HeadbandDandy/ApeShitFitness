@@ -14,9 +14,9 @@ const HeroBanner = () => (
       Click below to start personalizing your workouts!
     </Typography>
     <Stack>
-      <a href="#exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '200px', textAlign: 'center', background: 'navy', padding: '14px', fontSize: '30px', textTransform: 'none', color: 'gold', borderRadius: '4px' }}>Find Your Lifts!</a>
+      <a href="#exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '200px', textAlign: 'center', background: 'red', padding: '14px', fontSize: '30px', textTransform: 'none', color: 'gold', borderRadius: '4px' }}>Find Your Lifts!</a>
     </Stack>
-    <Typography fontWeight={600} color="#gold" sx={{ opacity: '0.2', display: { lg: 'block', xs: 'none' }, fontSize: '200px' }}>
+    <Typography fontWeight={600} color="gold" sx={{ opacity: '0.2', display: { lg: 'block', xs: 'none' }, fontSize: '200px' }}>
       Release <br/> The Beast!
     </Typography>
     <img src={HeroBannerImage} alt="hero-banner" className="hero-banner-img" />
